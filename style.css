@@ -1,0 +1,229 @@
+/*
+ * Add your CSS styles to this file.
+ */
+ 
+/* set font for entire document to Roboto, and fill it with Whitesmoke.*/
+body {
+	font-family: Roboto;
+	background-color: WhiteSmoke;
+}
+
+/*top-bar formatting begins here.*/
+
+/* Remove default hyperlink formatting from header.*/
+header a{
+text-decoration: none;
+}
+
+/* Formate title to be white text with a blue background, low-weight text, and clean margins. */
+.site-title {
+	font-weight: 300;
+	background-color: #319df6;
+	line-height: 2;
+	margin: -10px -20px 0 -10px;
+	padding-left: 15px;
+	color: white;
+}
+
+/* Top-bar formatting ends here.*/
+/* Nav bar formatting begins here.*/
+
+/* Font weight and positioning for navbar.*/
+
+.navbar {
+	font-weight: 600;
+	margin: -16px -20px -10px -25px;
+	background-color: White;
+}
+
+/* Get rid of list marks, and add some space between them for later blue underline of active nav.*/
+.navlist li { 
+	list-style-type: none; 
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* Make navbar list horizontal.*/
+.navbar ul{
+	display: flex;
+}
+
+/* Search bar formatting begins here.*/
+/* Nav bar formatting continues.*/
+
+/* Scoot the searchbar to the right side.*/
+.navbar-search {
+	display: flex;
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+/* Style the searchbar. */
+#navbar-search-input {
+	
+	/* Syle the text. Will not change on activation.*/
+	font-weight: 400;
+	font-family: Roboto;
+	font-size: 16px;
+	
+	/* Set background colour of search bar. Will change on activation.*/
+	background-color: WhiteSmoke;
+	
+	/* Add stylish spaceing to search bar, and smooth edges. Will not change on activation.*/
+	line-height: 1.9;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid LightGrey;
+	border-radius: 3px;
+}
+
+/* Make the searchbar turn white when in focus. Outline:none prevents outline from changeing.*/
+#navbar-search-input:focus {
+	background-color: white;
+	outline: none;
+}
+
+/* Remove color and border on sarch button.*/
+#navbar-search-button{
+	background-color: white;
+	border: none;
+}
+
+/* Add hover over color change and pointer.*/
+#navbar-search-button:hover{
+	color: #319df6;	
+	cursor: pointer;
+}
+
+/* Search bar formatting ends here.*/
+/* Nav button formatting begins here.*/
+/* Nav bar formatting continues.*/
+
+/* Add very dark grey color.*/
+.navbar a{
+	color: #303030;
+}
+
+/* Color the navlink blue on hover over */
+.navlink a:hover {
+	color: #319df6;
+}
+
+/* Moveing the nav buttons to be closer to mock positioning.*/
+.navlink {
+	line-height: 1.7;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+
+/* Apply a blue border to the bottom of the selected (active) navlink. Not technicaly an underline, but is in-fact a line that is under.*/
+.active {
+	border-bottom: 3px solid #319df6;
+}
+
+/* Nav button formatting ends here.*/
+/* Nav bar formatting ends here.*/
+/* Twit formatting begins here.*/
+
+/* Structure the twit's positionion*/
+.twit-container{
+	
+	/* Set margine sizes to create grey space between the content and the edges of screen and top nav bar.*/
+	margin-top:80px;
+	margin-left:100px;
+	margin-right:100px;
+
+	/* Make display flexible to allow dynamic wrap around in rows. */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* Twit author formatting begins here.*/
+/* Twit formatting continues.*/
+
+
+/* Set text weight and alignment of author.*/
+.twit-author {
+	font-weight: 600;
+	text-align: right;
+}
+/* Remove underscore and set color of author name to black.*/
+.twit-author a{
+	text-decoration: none;
+	color: #303030;
+}
+
+/* Add hover over color change and pointer to author name.*/
+.twit-author a:hover{
+	color: #319df6;
+	cursor: pointer;
+}
+
+/* Twit author formatting ends here.*/
+/* Twit body formatting begins here.*/
+/* Twit formatting continues.*/
+
+/* Make twit body content white with a WhiteSmoke border. Set proportional width and minimum width.*/
+.twit {
+	background-color: white;
+	border: 3px solid WhiteSmoke;
+	
+	width: 30%;
+	min-width: 250px;
+}
+
+/* Set margins on twit body text.*/
+.twit-content {
+	margin: 20px 20px 20px 45px;
+}
+
+/* Set twit body font weight.*/
+.twit-text {
+	font-weight: 400;
+}
+
+/* Set twit icon position to relative, reduce its top margin space, and scale it to be bigger.*/
+.twit-icon {
+	position: relative;
+	left: 17px;
+	top: 45px;
+	margin-top: -20px;
+	font-size: 120%;
+}
+
+/* Twit body formatting begins here.*/
+/* Twit formatting ends here.*/
+/* Create Twit button formatting begins here.*/
+
+/* Style the button.*/
+#create-twit-button {
+	
+	/* Set position to fixed, and place in lower right hand corner.*/
+	position: fixed;
+	bottom:50px;
+	right:50px;
+	
+	/* Set icon color to white, and scale it.*/
+	color:white;
+	font-size: 200%;
+	
+	/* Set button inside and border color to red, set its demensions, and make it a circle.*/
+	background-color: red;
+	border: 1px solid red;
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	
+	/* Add a shadow.*/
+	box-shadow: 7px 7px 6px lightgrey;
+}
+
+	/* Create a hover over color change and scale. Also add a pointer.*/
+#create-twit-button:hover {
+	background-color: #319df6;
+	border-color: #319df6;
+	
+	transform: scale(1.1);
+	cursor: pointer;
+}
